@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>item</title>
+		<style type="text/css">
+			.wrap {
+				/* relative 종속 값을 정중앙으로 위치 (위치 이동하면 종속 값 함께 이동)*/
+				position: relative; 
+				top :200px;
+				background: gray;
+				height: 400px; width: 400px;
+			}
+			.item {
+				position: absolute; 
+				background: lime;
+				top :150px; left :150px;
+				width: 100px; height: 100px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class ="wrap">
+			<div class="item">정중앙 위치</div>
+		</div>
+	</body>
+</html>

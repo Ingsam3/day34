@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>position</title>
+		<style type="text/css">
+			.span1 {
+				background: yellow; position: static; top:5px;
+				 /* position: static = 기본적인 방식으로 동작 */
+				 /* position: relrative = 본래 흐름대로 동작 */
+				 /* position: apsolute; bpttom :10px; = body를 기준으로 bottom 10px 동작*/
+			}
+			.span2 {
+				background: red; left:5px;
+			}
+			.span3 {
+				background: silver; position: static; top:-5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="background: green;">
+			position
+		</div>
+		
+		<span class="span1">span1</span>
+		<span class="span2">span2</span>
+		<span class="span3">span3</span>
+		
+		<div style="background: green;"> 기본 값은 static입니다</div>
+	</body>
+</html>

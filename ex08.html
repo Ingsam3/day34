@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>LOGIN PAGE 예제</title>
+		<style type="text/css">
+			div {
+				height: 200px; width: 200px; 
+				margin: auto; /* 중앙 */
+			}
+			.id {
+				width: 200px; height: 20px;
+				font-size: 20px;
+				border: none; /* text 테두리도 삭제 가능 */
+				border-bottom: 2px solid gray; /* 밑줄 생성 */
+				padding: 5px 0; margin : 10px 0;
+			}
+			.id::-webkit-input-placeholder {
+				/* placehloder 설정*/
+				text-align: center;
+				letter-spacing: 5px; /* 글자끼리 간격*/
+			}
+			
+			.id:focus {
+				outline: none; /* text 클릭시 생기는 아웃라인 삭제 가능 */
+				}
+				
+			.pwd {
+				border-radius: 5px; /* border-radius : 모서리각 둥글게 */
+				height: 20px;
+			}	
+			.btn {
+				border-radius: 5px; 
+				width: 200px; height: 30px;
+				background: olive;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h3 style="text-align: center; border-bottom: 1px solid;">
+			로그인페이지</h3>
+			
+			<form action="">
+				<input type="text" class="id" placeholder="input id"><br>
+				<input type="text" class="pwd" placeholder="input pass"><br>
+				<input type="button" class="btn" value="LOGIN"><br>
+			
+			</form>
+		</div>
+	</body>
+</html>

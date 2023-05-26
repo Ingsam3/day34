@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>shadow</title>
+		<style type="text/css">
+			.title { 
+			/* 왼쪽오른쪽, 위아래 번짐벙도 양수(왼->오/위->아래), 음수(오->왼/ 아래->위) */
+			text-shadow: -100px 10px 15px black; 
+			font-size: 70pt;/* pt: 고정사이즈 */ 
+			}
+			.img {width: 150px; height: 150px; margin: 20px;}
+			.shadow { box-shadow: 5px 5px 10px green;}
+			
+		</style>
+	</head>
+	<body>
+		<h1 class="title">그림자 효과 들어간 제목이 들어갑니다</h1>
+		<img src="1.jpg" class="shadow img"> <!-- 이미지에도 적용 가능 -->
+	</body>
+</html>

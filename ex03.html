@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>wrap</title>
+		<style type="text/css">
+		
+		#wrap{
+			
+			 /*인라인 효과 + 가로 배치*/
+			width : 600px; height: 200px;
+			border: 4px solid black;
+			margin: auto; /*항상 중앙에 배치*/
+			text-align: center;
+		}
+		
+		#container{display: flex;}
+		
+		#container div{ width: 33.333%; border :1px solid black;} /* 전체 사이즈에서 영역 지정 -기본틀 벗어나지 않게*/
+		#container div:first-child {
+			/*  wrap div:first-child :첫번째 자식 태그에게 */
+			background: red;
+		}
+		#container div:nth-child(2){
+			/* container div:nth-child(2) : 두번째 자식 태그에게*/
+			background: green;
+		}
+		#container div:nth-child(3){
+			background: aqua;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header style="background: gray;">제목이 들어옵니다</header>
+			<div id="container"> <!-- wrap :전체 콘텐츠에 대한 사이즈 지정 -->
+				<div> <h1>1</h1> </div>
+				<div> <h1>2</h1> </div>
+				<div> <h1>3</h1> </div>
+			</div>
+			<footer style="background: maroon;">바닥글이 들어옵니다</footer>
+		</div>
+		
+		
+	</body>
+</html>

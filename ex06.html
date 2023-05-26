@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fixed</title>
+		<style type="text/css">
+			.sp{background: cyan; width: 400px; height: 50px;}
+			
+			.rp1{
+				z-index :0; /* z-index: 앞, 뒤 위치 조정(본래 순서 무시) */
+				position: fixed; right: 30px; top :10px; /* fixed: 스크롤 상관없이 지정 */
+				background: orange; width: 400px; height: 50px;
+			}
+			.rp2{
+				z-index :1; /* 1 = 앞의 콘텐츠보다 위에 올라감 */
+				position: absolute; right: 60px; top :20px; /* absolute : 스크롤 따라감 */
+				background: lime; width: 400px; height: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p class="sp">정적 위치 설정 적용</p> <!-- 생성 순서에 따라 앞, 뒤 위치 적용 -->
+		<div class="rp1">
+			고정 위치 설정<br>
+			<a href="#">클릭부탁</a>
+		</div>
+		<p class="rp2">절대위치 설정 적용</p>
+		<p class="sp">정적 위치 적용</p>
+		<p class="sp">정적 위치 적용</p>
+	</body>
+</html>

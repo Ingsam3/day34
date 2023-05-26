@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css박스 모델</title>
+		<style type="text/css">
+		.box{
+			background: yellow; width: 300px; 
+			min-height: 200px; /* min-height: 최소 크기 */
+			border :1px solid navy; /* border -top,left 등 방향 지정 가능 */
+			padding: 20px 20px 20px 20px; /* top-right-bottom-lefe 순서 */
+			padding: 100px 20px ;  /* top-bottom(100px) // right-lefe(20px) 로 적용 */
+			padding: 100px ; /* 4 군데 모두 적용 */
+			margin: 20px; /* padding과 사용법 동일 */
+			
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">css박스 모델 <br>
+		
+		content  <br>
+		padding : 안쪽으로 여백을 줌 (사이즈 증가 및 안쪽 콘텐츠 밀어 넣음) <br>
+		border : 겉 선 지정<br>
+		margin : 바깥 방향의 크기를 조절한다<br>
+		
+		</div>
+		<footer style="background: maroon;">
+			footer지역입니다
+		</footer>
+	</body>
+</html>
