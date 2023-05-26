@@ -4,10 +4,89 @@
 		<meta charset="UTF-8">
 		<title>문제04</title>
 		<style type="text/css">
+		#wrap {
+			width: 450px; height: 500px;
+			display: flex;
+			flex-flow :column;
+			margin: auto;
+			border: 2px solid black;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.main{
+		height: 50%;
+		display: flex;
+		flex-flow :row;
+		
+		}
+		
+		.h{background: red;
+		height: 20%;
+		line-height :90px;
+		font-size: 30px;
+		}
+		
+		.n{background: #FFCD00;
+		height: 15%;
+		line-height :70px;
+		}
+		.s{background: green;
+		width: 70%;
+		}
+		.a{background: skyblue;
+		width: 30%;
+		line-height :80px;
+		}
+		.f{background: pink;
+		height: 15%;
+		line-height :50px;
+		}
+		
+		.s >section >div{
+			border : 2px solid;
+			font-weight: normal;
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+		.s >section{
+			padding : 5px;
+			margin-bottom: 20px; 
+			
+		}
+		
+		.sh{background: pink;}
+		.sa{background: pink;}
+		.sf{background: pink;}
+		.sp{padding-bottom: 5px;}
 		
 		</style>
 	</head>
 	<body>
+	<div id="wrap">
+			<div class="h">
+				<header> &#8249;&nbsp;header&nbsp;&#8250;</header>
+			</div>
+			<div class="n">
+					<nav >&#8249;&nbsp;nav&nbsp;&#8250;</nav>
+				</div>
+			<div class="main">
+				<div  class="s">
+					<section >
+						<p class="sp">&#8249;&nbsp;section1&nbsp;&#8250;</p>
+						<div class="sh">&#8249;&nbsp;header&nbsp;&#8250;</div>
+						<div class="sa">&#8249;&nbsp;article&nbsp;&#8250;</div>
+						<div class="sf">&#8249;&nbsp;footer&nbsp;&#8250;</div>	
+					</section>
+				</div>
+				<div class="a">
+					<aside >&#8249;&nbsp;aside&nbsp;&#8250;</aside>
+				</div>
+			</div>
+			<div class="f">
+				<footer>&#8249;&nbsp;footer&nbsp;&#8250;</footer>
+			</div>
+		</div>
 	
 	</body>
 </html>

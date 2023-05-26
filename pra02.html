@@ -5,9 +5,75 @@
 		<title>문제02</title>
 		<style type="text/css">
 		
+		#wrap {
+		display :flex;
+		flex-flow :column;
+		border : 2px solid black;
+		width: 600px; height: 400px;
+		margin: auto;
+		font-size: 20px;
+		}
+		#wrap >div {
+		
+		text-align: center; 
+		border : 2px solid black;
+		font-weight: bold; 
+		}
+		
+		.main{
+		 line-height :50px;
+		 height: 60%;
+		 display :flex;
+		 flex-flow :row;
+		 }
+		
+		
+		.h{
+		font-size: 40px;
+		line-height :100px;
+		height :25%;
+		background: red;}
+		
+		.n{
+		width :15%;
+		border-right :4px solid black;
+		background: yellow;}
+		
+		.s{
+		width :60%;
+		border-right :4px solid black;
+		background: green; }
+		
+		.a{
+		width:25%;
+		background: yellow;}
+		
+		.f{
+		height :15%;
+		background: pink;}
+		
+		
 		</style>
 	</head>
 	<body>
-	
+		<div id="wrap">
+			<div class="h">
+				<header> &#8249;header&#8250;</header>
+			</div>
+			<div class="main">
+				<div class="n">
+					<nav >&#8249;nav&#8250;</nav>
+				</div>
+				<div  class="s">
+					<section>&#8249;section&#8250;</section>
+				</div>
+				<div class="a">
+					<aside >&#8249;aside&#8250;</aside>
+				</div>
+			</div>
+			<div class="f">
+				<footer>&#8249;footer&#8250;</footer>
+			</div>
+		</div>
 	</body>
 </html>

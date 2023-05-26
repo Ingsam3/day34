@@ -4,10 +4,67 @@
 		<meta charset="UTF-8">
 		<title>문제01</title>
 		<style type="text/css">
+			.wrap {
+				display: flex;
+				border : 2px solid black;
+				margin: auto;
+				width: 400px; height: 300px;
+				background: gray;
+				text-align: center;
+				position: relative;
+			}
+			#main {
+			position: relative;
+			display: inline-block;
+			}  
+			
+			#main div {
+				font-family: serif; font-weight: bold;
+				border :1px solid black;
+			
+			}
+			.second {
+				display: inline-block;
+				line-height: 50px;
+				width: 400px; height: 50%;
+				display :flex;
+				flex-flow :row;
+			}
+			.head {
+				line-height: 80px;
+				font-size:30px;
+				border :1px solid black;
+				background: red;
+				width: 400px; height: 30%;
+				 
+			}
+			.nav {
+			 width :20%;	
+			 background: yellow;
+			}
+			.sec { 
+			 width : 80% ;	
+			 background: green;
+			}
+			.foot {
+			 line-height: 50px;
+			 width: 400px; height: 19%;
+			 background: pink;
+			}
 		
 		</style>
 	</head>
 	<body>
-	
+		<div class="wrap">
+			<div id="main">
+				<div class="head"><header > &#8249;header&#8250;</header></div>
+				<div class="second">
+					<div class="nav"><nav> &#8249;nav&#8250; </nav></div>
+					<div class="sec"><section> &#8249;section&#8250;</section></div>
+				</div>
+				<div class="foot"><footer> &#8249;footer&#8250;</footer></div>
+			</div>
+		
+		</div>
 	</body>
 </html>
